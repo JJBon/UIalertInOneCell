@@ -1,0 +1,12 @@
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath == 1 {
+            let alert = UIAlertController(title: "Button", message: "", preferredStyle: .ActionSheet)
+            alert.addAction(UIAlertAction(title:"Suite", style: UIAlertActionStyle.Default, handler: { action in
+                print("itWorked")
+                }))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+
+    
